@@ -837,6 +837,9 @@ main {
 .skills-title { margin-bottom: 20px; }
 
 .skills-list { padding: 20px; }
+.skill{
+  margin-bottom: 20px;
+}
 
 
 .skills-item:not(:last-child) { margin-bottom: 15px; }
@@ -1487,7 +1490,9 @@ textarea.form-input::-webkit-resizer { display: none; }
   /**
    * #RESUME
    */
-
+  .timeline a{
+    color:lightskyblue;
+  }
   .timeline-list { margin-left: 65px; }
 
   .timeline-item:not(:last-child)::before { left: -40px; }
