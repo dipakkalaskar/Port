@@ -321,7 +321,7 @@ main {
   transition: var(--transition-2);
 }
 
-.sidebar.active { max-height: 405px; }
+.sidebar.active { max-height: 500px; }
 
 .sidebar-info {
   position: relative;
@@ -1117,6 +1117,37 @@ main {
   line-height: 1.6;
 }
 
+    .resume-download-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      width: 100%;
+      padding: 10px 16px;
+      margin-top: 4px;
+      background: var(--border-gradient-onyx);
+      color: var(--orange-yellow-crayola);
+      border-radius: 12px;
+      font-size: 13px;
+      font-weight: var(--fw-500);
+      text-decoration: none;
+      box-shadow: var(--shadow-2);
+      position: relative;
+      z-index: 1;
+      transition: var(--transition-1);
+    }
+    .resume-download-btn::before {
+      content: "";
+      position: absolute;
+      inset: 1px;
+      background: var(--bg-gradient-jet);
+      border-radius: inherit;
+      z-index: -1;
+      transition: var(--transition-1);
+    }
+    .resume-download-btn:hover { background: var(--bg-gradient-yellow-1); }
+    .resume-download-btn:hover::before { background: var(--bg-gradient-yellow-2); }
+    .resume-download-btn ion-icon { font-size: 16px; }
 
 
 
